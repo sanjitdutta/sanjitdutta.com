@@ -54,6 +54,7 @@ html, body {
   z-index: 2;
   background-color: #3f3f3f;
   color: #fff;
+  padding: 20px 20px;
 }
 
 .below-hero {
@@ -62,6 +63,7 @@ html, body {
 
 .content {
   min-height: 100%;
+  padding: 20px 20px;
 }
 
 .headshot {
@@ -136,15 +138,25 @@ a:hover {
   color: #64BBFE;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 767px) , (max-height: 750px) {
 
   .hero {
     position: relative;
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 100%;
+    height: auto!important;
   }
 
   .below-hero {
     min-height: 0px;
     height: 0px;
+  }
+
+  .content {
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 100%;
   }
 
 }
