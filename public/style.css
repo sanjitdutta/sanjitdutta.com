@@ -1,3 +1,35 @@
+.template {
+  color: #7B7B7B;
+  color: #636363;
+  color: #3F3F3F;
+  color: #252525;
+  color: #0B0B0B;
+
+  color: #96D1FE;
+  color: #64BBFE;
+  color: #199CFF;
+  color: #0081E4;
+  color: #0063B0;
+
+  color: #4F91DC;
+  color: #2978D0;
+  color: #1D5491;
+  color: #133A65;
+  color: #0A2039;
+
+  color: #E6AB92;
+  color: #DE8D6A;
+  color: #D25F2E;
+  color: #A74B23;
+  color: #7B3719;
+
+  color: #FCE9DD;
+  color: #F8CCAF;
+  color: #F3A16A;
+  color: #EF833A;
+  color: #E36612;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -19,6 +51,9 @@ html, body {
   position: fixed;
   top: 0px;
   left: 0px;
+  z-index: 2;
+  background-color: #3f3f3f;
+  color: #fff;
 }
 
 .below-hero {
@@ -27,6 +62,78 @@ html, body {
 
 .content {
   min-height: 100%;
+}
+
+.headshot {
+   height: auto;
+   width: 400px;
+   max-width: 70%;
+}
+
+.name {
+  text-transform: lowercase;
+  font-weight: bold;
+  padding: 10px 0px 10px 0px;
+  font-size: 3em;
+  color: #199CFF;
+}
+
+.below-name {
+  text-align: left;
+  color: #F8CCAF;
+  max-width: 200px;
+  margin: 0 auto;
+  padding: 10px;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.description {
+  padding-top: 20px;
+}
+
+.center {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.icons {
+  padding-top: 10px;
+}
+
+.list-inline {
+  display: inline;
+  margin: 0 auto;
+}
+
+.list-inline li {
+  display: inline-block;
+  padding: 0px 5px 10px 5px;
+}
+
+.icons .list-inline li a {
+  width: 47px;
+  height: 47px;
+  border-radius: 100%;
+  border: 1px solid #7B7B7B;
+  padding: 10px;
+  display: inline-block;
+  color: #7B7B7B;
+  transition: all .3s ease-in-out;
+}
+
+.icons .list-inline li a:hover {
+  color: #199CFF;
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+a, a:visited {
+  color: #199CFF;
+}
+
+a:hover {
+  color: #64BBFE;
 }
 
 @media (max-width: 767px) {
