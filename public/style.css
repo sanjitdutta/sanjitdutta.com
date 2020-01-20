@@ -94,6 +94,56 @@ html, body {
   padding-top: 20px;
 }
 
+.content {
+  padding: 0;
+}
+
+.block {
+  height: 700px;
+  width: 100%;
+  min-width: 100%;
+  padding: 20px;
+}
+
+.block-1 {
+  background: #EF833A;
+  color: #fff;
+}
+
+.block-2 {
+  background: #1D5491;
+  color: #fff;
+}
+
+.block-3 {
+  background: #DE8D6A;
+  color: #000;
+}
+
+.block-4 {
+  background: #199CFF;
+  color: #000;
+}
+
+.block > h2 {
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
+.block > h2 .big-number {
+  font-size: 3em;
+  width: 140px;
+  display: inline-block;
+}
+
+.footer {
+  background: #133A65;
+  color: #fff;
+  height: 50px;
+  text-align: center;
+  vertical-align: middle;
+}
+
 .center {
   margin: 0 auto;
   text-align: center;
