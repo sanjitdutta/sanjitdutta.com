@@ -17,17 +17,17 @@
   color: #133A65;
   color: #0A2039;
 
-  color: #E6AB92;
-  color: #DE8D6A;
-  color: #D25F2E;
-  color: #A74B23;
-  color: #7B3719;
+  color: #92e5e6;
+  color: #6ad3de;
+  color: #2ec8d2;
+  color: #239fa7;
+  color: #19777b;
 
-  color: #FCE9DD;
-  color: #F8CCAF;
-  color: #F3A16A;
-  color: #EF833A;
-  color: #E36612;
+  color: #ddfcf4;
+  color: #aff8e6;
+  color: #6af3cb;
+  color: #3aefb2;
+  color: #12e3a6;
 }
 
 * {
@@ -40,10 +40,42 @@ html, body {
   height: 100%;
 }
 
+a, a:visited {
+  color: #199CFF;
+}
+
+a:hover {
+  color: #0081E4;
+}
+
+::selection {
+  color: #fff;
+  background-color: #0081E4;
+}
+
+/**
+ * ------------------------------------------------------------------
+ * Fix weird UL padding for all instances
+ */
+
+ul {
+  padding-left: 40px;
+}
+
+/**
+ * ------------------------------------------------------------------
+ * Design mode class
+ */
+
 .design-mode {
   background-color: rgba(50, 50, 50, .5);
   border: 1px solid red;
 }
+
+/**
+ * ------------------------------------------------------------------
+ * Hero
+ */
 
 .hero {
   min-height: 100%;
@@ -61,11 +93,6 @@ html, body {
   min-height: 100%;
 }
 
-.content {
-  min-height: 100%;
-  padding: 20px 20px;
-}
-
 .headshot {
    height: auto;
    width: 400px;
@@ -75,74 +102,25 @@ html, body {
 .name {
   text-transform: lowercase;
   font-weight: bold;
-  padding: 10px 0px 10px 0px;
+  padding: 30px 0px 10px 0px;
   font-size: 3em;
   color: #199CFF;
 }
 
 .below-name {
   text-align: left;
-  color: #F8CCAF;
+  color: #aff8e6;
   max-width: 200px;
   margin: 0 auto;
-  padding: 10px;
+  padding: 10px 10px 30px 10px;
   font-size: 1.5em;
   font-weight: bold;
 }
 
-.description {
-  padding-top: 20px;
-}
-
-.content {
-  padding: 0;
-}
-
-.block {
-  height: 700px;
-  width: 100%;
-  min-width: 100%;
-  padding: 20px;
-}
-
-.block-1 {
-  background: #EF833A;
-  color: #fff;
-}
-
-.block-2 {
-  background: #1D5491;
-  color: #fff;
-}
-
-.block-3 {
-  background: #DE8D6A;
-  color: #000;
-}
-
-.block-4 {
-  background: #199CFF;
-  color: #000;
-}
-
-.block > h2 {
-  font-size: 2em;
-  text-transform: uppercase;
-}
-
-.block > h2 .big-number {
-  font-size: 3em;
-  width: 140px;
-  display: inline-block;
-}
-
-.footer {
-  background: #133A65;
-  color: #fff;
-  height: 50px;
-  text-align: center;
-  vertical-align: middle;
-}
+/**
+ * ------------------------------------------------------------------
+ * Hero icons
+ */
 
 .center {
   margin: 0 auto;
@@ -180,13 +158,83 @@ html, body {
   border: 1px solid #fff;
 }
 
-a, a:visited {
+/**
+ * ------------------------------------------------------------------
+ * Right pane blocks
+ */
+
+.content {
+  padding: 0;
+}
+
+.block {
+  color: #bbb;
+  width: 100%;
+  min-width: 100%;
+  padding: 40px;
+  text-align: justify;
+}
+
+.block-1, .block-3 {
+  background: #252525;
+}
+
+.block-2, .block-4 {
+  background: #0B0B0B;
+}
+
+.block-1 > h2 {
+  color: #3aefb2;
+}
+
+.block-2 > h2 {
+  color: #2978D0;
+}
+
+.block-3 > h2 {
+  color: #6ad3de;
+}
+
+.block-4 > h2 {
   color: #199CFF;
 }
 
-a:hover {
-  color: #64BBFE;
+.block > h2 {
+  font-size: 2em;
+  text-transform: uppercase;
+  padding-bottom: 20px;
 }
+
+.block > h2 .big-number {
+  font-size: 3em;
+  width: 140px;
+  display: inline-block;
+}
+
+/**
+ * ------------------------------------------------------------------
+ * Experience list
+ */
+
+ 
+
+/**
+ * ------------------------------------------------------------------
+ * Footer
+ */
+
+.footer {
+  background: #252525;
+  color: #aff8e6;
+  height: 50px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/**
+ * ------------------------------------------------------------------
+ * Responsiveness
+ */
 
 @media (max-width: 767px) , (max-height: 750px) {
 
@@ -210,3 +258,7 @@ a:hover {
   }
 
 }
+
+/**
+ * ------------------------------------------------------------------
+ */

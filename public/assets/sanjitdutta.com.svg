@@ -24,9 +24,9 @@
      inkscape:window-width="1680"
      units="px"
      showgrid="false"
-     inkscape:current-layer="svg8"
+     inkscape:current-layer="layer1"
      inkscape:document-units="mm"
-     inkscape:cy="202.87505"
+     inkscape:cy="257.017"
      inkscape:cx="298.38379"
      inkscape:zoom="2.216396"
      inkscape:pageshadow="2"
@@ -45,7 +45,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -69,14 +69,14 @@
        width="15"
        id="rect24" />
     <rect
-       style="stroke-width:0.28937882;fill:#a74b23;fill-opacity:1;opacity:1"
+       style="stroke-width:0.28937882;fill:#239fa7;fill-opacity:1;opacity:1"
        y="257.11362"
        x="65"
        height="15"
        width="15"
        id="rect26" />
     <rect
-       style="stroke-width:0.28937882;fill:#ef833a;fill-opacity:1;opacity:1"
+       style="stroke-width:0.28937882;fill:#3aefb2;fill-opacity:1;opacity:1"
        y="257.11362"
        x="84.999992"
        height="15"
@@ -104,14 +104,14 @@
        width="15"
        id="rect34" />
     <rect
-       style="stroke-width:0.79375;fill:#d25f2e;fill-opacity:1;stroke:#0c0c0c;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;opacity:1"
+       style="stroke-width:0.79375;fill:#2ec8d2;fill-opacity:1;stroke:#0c0c0c;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;opacity:1"
        y="237.22728"
        x="65"
        height="15"
        width="15"
        id="rect36" />
     <rect
-       style="stroke-width:0.79375;fill:#f3a16a;fill-opacity:1;stroke:#0c0c0c;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;opacity:1"
+       style="stroke-width:0.79375;fill:#6af3cb;fill-opacity:1;stroke:#0c0c0c;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;opacity:1"
        y="237.22728"
        x="84.999992"
        height="15"
@@ -139,14 +139,14 @@
        width="15"
        id="rect44" />
     <rect
-       style="stroke-width:0.28937882;fill:#de8d6a;fill-opacity:1;opacity:1"
+       style="stroke-width:0.28937882;fill:#6ad3de;fill-opacity:1;opacity:1"
        y="217.34093"
        x="65"
        height="15"
        width="15"
        id="rect46" />
     <rect
-       style="stroke-width:0.28937882;fill:#f8ccaf;fill-opacity:1;opacity:1"
+       style="stroke-width:0.28937882;fill:#aff8e6;fill-opacity:1;opacity:1"
        y="217.34093"
        x="84.999992"
        height="15"
@@ -174,14 +174,14 @@
        width="15"
        id="rect54" />
     <rect
-       style="stroke-width:0.28937882;fill:#e6ab92;fill-opacity:1;opacity:1"
+       style="stroke-width:0.28937882;fill:#92e5e6;fill-opacity:1;opacity:1"
        y="197.45459"
        x="65"
        height="15"
        width="15"
        id="rect56" />
     <rect
-       style="stroke-width:0.28937882;fill:#fce9dd;fill-opacity:1;opacity:1"
+       style="stroke-width:0.28937882;fill:#ddfcf4;fill-opacity:1;opacity:1"
        y="197.45459"
        x="84.999992"
        height="15"
@@ -207,14 +207,14 @@
        height="15"
        x="84.999992"
        y="276.99997"
-       style="fill:#e36612;fill-opacity:1;stroke-width:0.28937882;opacity:1" />
+       style="fill:#12e3a6;fill-opacity:1;stroke-width:0.28937882;opacity:1" />
     <rect
        id="rect16"
        width="15"
        height="15"
        x="65"
        y="276.99997"
-       style="stroke-width:0.28937882;fill:#7b3719;fill-opacity:1;opacity:1" />
+       style="stroke-width:0.28937882;fill:#19777b;fill-opacity:1;opacity:1" />
     <rect
        id="rect18"
        width="15"
