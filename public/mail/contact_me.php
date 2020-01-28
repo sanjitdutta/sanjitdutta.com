@@ -14,7 +14,7 @@ if(empty($_POST['name'])  		||
 if(empty($_POST['g-recaptcha-response'])) die("false");
 
 $url = 'https://www.google.com/recaptcha/api/siteverify';
-$data = array('secret' => '6LfaBgsTAAAAACG6XGoQ5Hfw6OGcM2XlpfZPsfuq', 'response' => $_POST['g-recaptcha-response']);
+$data = array('secret' => 'REDACTED', 'response' => $_POST['g-recaptcha-response']);
 
 // use key 'http' even if you send the request to https://...
 $options = array(
