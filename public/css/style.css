@@ -37,6 +37,7 @@
 
 html, body {
   font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: #252525;
   height: 100%;
   line-height: 1.3;
 }
@@ -414,6 +415,19 @@ div#success {
 .btn-block {
   border-radius: 0;
   width: 100%;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.g-recaptcha {
+  display: inline-block;
+}
+
+.flex-form {
+  display: flex;
+  flex-direction: row;
+  distribute: stretch;
+  margin-top: 20px;
 }
 
 /**
