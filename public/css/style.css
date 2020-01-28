@@ -38,6 +38,7 @@
 html, body {
   font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
   height: 100%;
+  line-height: 1.3;
 }
 
 a, a:visited {
@@ -58,8 +59,30 @@ a:hover {
  * Fix weird UL padding for all instances
  */
 
+ul {
+  list-style: none;
+}
+
 ul.pad {
+  list-style: disc;
   padding-left: 40px;
+}
+
+ul.light-pad {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+ul.light-spacing li {
+  padding-bottom: 10px;
+}
+
+li.pad-below {
+  padding-bottom: 20px;
+}
+
+li.pad-above {
+  padding-top: 20px;
 }
 
 /**
@@ -146,7 +169,7 @@ ul.pad {
   height: 47px;
   border-radius: 100%;
   border: 1px solid #7B7B7B;
-  padding: 10px;
+  padding: 14px 10px 10px 10px;
   display: inline-block;
   color: #7B7B7B;
   transition: all .3s ease-in-out;
@@ -188,11 +211,11 @@ ul.pad {
 }
 
 .block-2 > h2 {
-  color: #2978D0;
+  color: #199CFF;
 }
 
 .block-3 > h2 {
-  color: #6ad3de;
+  color: #3aefb2;
 }
 
 .block-4 > h2 {
@@ -220,50 +243,69 @@ ul.pad {
   text-align: center;
 }
 
+.block-3 .timeline {
+  border-left: 4px solid #3aefb2;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.block-3 .timeline .event:after {
+  box-shadow: 0 0 0 4px #3aefb2;
+}
+
 .timeline {
-  border-left: 4px solid #2978D0;
+  border-left: 4px solid #199CFF;
   border-bottom-right-radius: 4px;
   border-top-right-radius: 4px;
-  background: rgba(255, 255, 255, 0.03);
+  background: rgba(255, 255, 255, 0.05);
   color: rgba(255, 255, 255, 0.8);
-  /* margin: 0px auto; */
-  margin-left: 150px;
+  margin-left: 130px;
   position: relative;
-  padding: 50px;
+  padding: 30px;
   list-style: none;
   text-align: left;
-  /* max-width: 50%; */
 }
+
 .timeline h1 {
   letter-spacing: 1.5px;
   font-weight: 100;
   font-size: 1.4em;
 }
+
 .timeline h2,
 .timeline h3 {
-  letter-spacing: 1.5px;
-  font-weight: 400;
-  font-size: 1.4em;
+  font-weight: bold;
+  font-size: 1.3em;
+  font-style: italic;
 }
+
+.timeline h3 .subtitle {
+  font-weight: normal;
+  font-size: 0.8em;
+}
+
 .timeline .event {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   padding-bottom: 25px;
   margin-bottom: 50px;
   position: relative;
+  min-height: 80px;
 }
+
 .timeline .event:last-of-type {
   padding-bottom: 0;
   margin-bottom: 0;
   border: none;
 }
+
 .timeline .event:before,
 .timeline .event:after {
   position: absolute;
   display: block;
   top: 0;
 }
+
 .timeline .event:before {
-  left: -217.5px;
+  left: -177.5px;
   color: rgba(255, 255, 255, 0.4);
   content: attr(data-date);
   text-align: right;
@@ -271,15 +313,107 @@ ul.pad {
   font-size: 0.9em;
   min-width: 120px;
 }
+
 .timeline .event:after {
-  box-shadow: 0 0 0 4px #2978D0;
-  left: -57.85px;
+  box-shadow: 0 0 0 4px #199CFF;
+  left: -37.85px;
   background: #313534;
   border-radius: 50%;
   height: 11px;
   width: 11px;
   content: "";
   top: 5px;
+}
+
+.event-title-box {
+  display: table;
+  margin-bottom: 10px;
+  vertical-align: middle;
+}
+
+.event-img {
+  width: 80px;
+  margin-right: 20px;
+}
+
+.event-title {
+  display: table-cell;
+  vertical-align: middle;
+  margin: 0;
+}
+
+/**
+ * ------------------------------------------------------------------
+ * Contact Form
+ */
+
+.floating-label-form-group {
+    position: relative;
+    margin-bottom: 0;
+    padding-bottom: .5em;
+    border-bottom: 1px solid #eee;
+}
+
+.floating-label-form-group input,
+.floating-label-form-group textarea {
+    z-index: 4;
+    position: relative;
+    padding-right: 0;
+    padding-left: 0;
+    border: 0;
+    border-radius: 0;
+    font-size: 1.5em;
+    background: 0 0;
+    box-shadow: none!important;
+    resize: none;
+}
+
+.floating-label-form-group label {
+    display: block;
+    z-index: 3;
+    position: relative;
+    top: 2em;
+    margin: 20px 0px 0px 0px;
+    font-size: .85em;
+    line-height: 0.5em;
+    vertical-align: middle;
+    vertical-align: baseline;
+    opacity: 0;
+    -webkit-transition: top .3s ease,opacity .3s ease;
+    -moz-transition: top .3s ease,opacity .3s ease;
+    -ms-transition: top .3s ease,opacity .3s ease;
+    transition: top .3s ease,opacity .3s ease;
+}
+
+.floating-label-form-group::not(:first-child) {
+    padding-left: 14px;
+    border-left: 1px solid #eee;
+}
+
+.floating-label-form-group-with-value label {
+    top: 0;
+    opacity: 1;
+}
+
+.floating-label-form-group-with-focus label {
+    color: #199CFF;
+}
+
+form .row:first-child .floating-label-form-group {
+    border-top: 1px solid #eee;
+}
+
+.form-control:focus {
+  background: inherit;
+}
+
+div#success {
+  margin-top: 10px;
+}
+
+.btn-block {
+  border-radius: 0;
+  width: 100%;
 }
 
 /**
@@ -292,6 +426,10 @@ ul.pad {
   color: #aff8e6;
   height: 50px;
   text-align: center;
+  vertical-align: middle;
+}
+
+.footer-text {
   vertical-align: middle;
 }
 
