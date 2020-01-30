@@ -484,10 +484,6 @@ div#success {
     font-size: 0.9em;
   }
 
-  .event-img {
-    /* display: none; */
-  }
-
   .timeline .event:before {
     top: 20px;
     left: -95.5px;
@@ -500,7 +496,6 @@ div#success {
   }
 
   .event-title {
-    /* display: block; */
     margin-top: 0px;
   }
 
