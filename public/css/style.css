@@ -196,7 +196,6 @@ li.pad-above {
   width: 100%;
   min-width: 100%;
   padding: 40px;
-  text-align: justify;
 }
 
 .block-1, .block-3 {
@@ -239,10 +238,6 @@ li.pad-above {
  * ------------------------------------------------------------------
  * Experience list
  */
-
- .timeline-content {
-  text-align: center;
-}
 
 .block-3 .timeline {
   border-left: 4px solid #3aefb2;
@@ -473,6 +468,10 @@ div#success {
     flex: 0 0 100%;
   }
 
+  .block {
+    padding: 20px;
+  }
+
   .block > h2 .big-number {
     display: block;
   }
@@ -481,9 +480,17 @@ div#success {
     margin-left: 30px;
   }
 
+  .timeline .event {
+    font-size: 0.9em;
+  }
+
+  .event-img {
+    /* display: none; */
+  }
+
   .timeline .event:before {
     top: 20px;
-    left: -107.5px;
+    left: -95.5px;
     min-width: 50px;
     transform: rotate(-90deg);
   }
@@ -493,8 +500,8 @@ div#success {
   }
 
   .event-title {
-    display: block;
-    margin-top: 20px;
+    /* display: block; */
+    margin-top: 0px;
   }
 
   .flex-form {
