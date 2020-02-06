@@ -124,7 +124,6 @@ li.pad-above {
 }
 
 .name {
-  text-transform: lowercase;
   font-weight: bold;
   padding: 30px 0px 10px 0px;
   font-size: 3em;
@@ -132,8 +131,9 @@ li.pad-above {
 }
 
 .below-name {
+  text-transform: lowercase;
   text-align: left;
-  color: #aff8e6;
+  color: #96D1FE;
   max-width: 200px;
   margin: 0 auto;
   padding: 10px 10px 30px 10px;
@@ -207,7 +207,7 @@ li.pad-above {
 }
 
 .block-1 > h2 {
-  color: #3aefb2;
+  color: #96D1FE;
 }
 
 .block-2 > h2 {
@@ -215,7 +215,7 @@ li.pad-above {
 }
 
 .block-3 > h2 {
-  color: #3aefb2;
+  color: #96D1FE;
 }
 
 .block-4 > h2 {
@@ -240,12 +240,12 @@ li.pad-above {
  */
 
 .block-3 .timeline {
-  border-left: 4px solid #3aefb2;
+  border-left: 4px solid #96D1FE;
   background: rgba(0, 0, 0, 0.3);
 }
 
 .block-3 .timeline .event:after {
-  box-shadow: 0 0 0 4px #3aefb2;
+  box-shadow: 0 0 0 4px #96D1FE;
 }
 
 .timeline {
@@ -432,7 +432,7 @@ div#success {
 
 .footer {
   background: #252525;
-  color: #aff8e6;
+  color: #96D1FE;
   height: 50px;
   text-align: center;
   vertical-align: middle;
