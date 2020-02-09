@@ -198,7 +198,7 @@ li.pad-above {
   padding: 40px;
 }
 
-.block-1, .block-3 {
+.block-1, .block-3, .block-5 {
   background: #252525;
 }
 
@@ -222,15 +222,19 @@ li.pad-above {
   color: #199CFF;
 }
 
+.block-5 > h2 {
+  color: #96D1FE;
+}
+
 .block > h2 {
-  font-size: 2em;
+  font-size: 2.5rem;
   text-transform: uppercase;
   padding-bottom: 20px;
 }
 
 .block > h2 .big-number {
-  font-size: 3em;
-  width: 140px;
+  font-size: 5rem;
+  width: 100px;
   display: inline-block;
 }
 
@@ -423,6 +427,33 @@ div#success {
   flex-direction: row;
   distribute: stretch;
   margin-top: 20px;
+}
+
+/**
+ * ------------------------------------------------------------------
+ * RSS
+ */
+
+h2 a:hover, h3 a:hover {
+  text-decoration: none;
+}
+
+.feed-post {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  margin: 30px 0px 30px 0px;
+}
+
+.feed-post > h3 {
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+.feed-post > h3.date {
+  font-size: 1.2rem;
+  font-weight: normal;
+  font-style: italic;
+  color: #555;
 }
 
 /**
