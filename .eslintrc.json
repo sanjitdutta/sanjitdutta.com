@@ -1,0 +1,51 @@
+{
+  "rules": {
+    "max-len": [
+      "error",
+      120,
+      2,
+      {
+        "ignoreComments": true,
+        "ignoreUrls": true,
+        "ignorePattern": "^\\s*var\\s.+=\\s*require\\s*\\("
+      }
+    ],
+    "strict": [
+      "off"
+    ],
+    "indent": [
+      "error",
+      2,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "linebreak-style": [
+      "off"
+    ],
+    "semi": [
+      "error",
+      "always"
+    ],
+    "no-console": [
+      "off"
+    ],
+    "no-trailing-spaces": [
+      "error"
+    ],
+    "no-warning-comments": [
+      "warn"
+    ]
+  },
+  "env": {
+    "jquery": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 6
+  },
+  "extends": "eslint:recommended"
+}
