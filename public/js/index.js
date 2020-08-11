@@ -32,7 +32,7 @@ $(function() {
       mediumBodyPlain: function(entry) {
         var plainText = $(entry.content).text();
         return plainText.substring(0, 300) + '...';
-      },
+      }
     },
 
   });
