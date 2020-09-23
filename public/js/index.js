@@ -16,7 +16,7 @@ $(function() {
    * Wordpress RSS Feed Loader
    */
   $('#rss-feeds').rss('https://www.sanjitdutta.com/blog/feed/', {
-    limit: 2,
+    limit: 3,
     host: 'www.sanjitdutta.com/feedr/',
     ssl: true,
     support: false,
