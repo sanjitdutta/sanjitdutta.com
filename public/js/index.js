@@ -15,7 +15,7 @@ $(function() {
   /**
    * Wordpress RSS Feed Loader
    */
-  $('#rss-feeds').rss('https://www.sanjitdutta.com/blog/feed/', {
+  $('#rss-feeds').rss('https://sanjitd.medium.com/feed/', {
     limit: 3,
     host: 'www.sanjitdutta.com/feedr/',
     ssl: true,
@@ -24,13 +24,15 @@ $(function() {
     entryTemplate: '<div class=\'feed-post\'> \
       <h3><a href=\'{url}\' target=\'_blank\'>{title}</a></h3> \
       <h3 class=\'date\'>{date}</h3> \
-      {teaserImage} \
+      <div class=\'teaser\'>{teaserImage}</div> \
       <p>{mediumBodyPlain} <a href=\'{url}\' target=\'_blank\'>more</a></p> \
+      <br class=\'clear\' /> \
     </div>',
     dateFormat: 'MMMM Do, YYYY',
     tokens: {
       mediumBodyPlain: function(entry) {
-        var plainText = $(entry.content).text();
+        // var plainText = $(entry.content).text();
+        var plainText = $(entry.content).filter('p').text();
         return plainText.substring(0, 300) + '...';
       }
     },
