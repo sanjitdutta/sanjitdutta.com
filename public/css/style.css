@@ -37,7 +37,7 @@
 
 html, body {
   font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background: #252525;
+  background: #fafafa;
   height: 100%;
   line-height: 1.8;
 }
@@ -108,8 +108,8 @@ li.pad-above {
   top: 0px;
   left: 0px;
   z-index: 2;
-  background-color: #3f3f3f;
-  color: #fff;
+  color: #3f3f3f;
+  background-color: #fafafa;
   padding: 20px 20px;
 }
 
@@ -133,7 +133,7 @@ li.pad-above {
 .below-name {
   text-transform: lowercase;
   text-align: left;
-  color: #96D1FE;
+  color: #3F3F3F;
   max-width: 150px;
   margin: 0 auto;
   padding: 10px 10px 30px 10px;
@@ -179,7 +179,7 @@ li.pad-above {
 .icons .list-inline li a:hover {
   color: #199CFF;
   background-color: #fff;
-  border: 1px solid #fff;
+  border: 1px solid #199CFF;
 }
 
 /**
